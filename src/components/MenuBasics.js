@@ -80,6 +80,13 @@ function MenuBasics() {
       >
         Contacto
       </NavLink>
+      <p>Rutas anidadas</p>
+      <NavLink
+        to="/react"
+        className={({ isActive }) => (isActive ? `${active}` : "")}
+      >
+        Documentacion de React
+      </NavLink>
     </div>
   );
 }

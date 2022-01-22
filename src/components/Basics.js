@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate,  } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Contact } from "../pages/Contact";
 import { About } from "../pages/About";
@@ -7,6 +7,7 @@ import { User } from "../pages/User";
 import { Products } from "../pages/Products";
 import { Acerca } from "../pages/Acerca";
 import { Contacto } from "../pages/Contacto";
+import { ReactTopics } from "../pages/ReactTopics";
 
 function Basics() {
   return (
@@ -20,6 +21,7 @@ function Basics() {
         <Route path="/products" element={<Products />} />
         <Route path="/acerca" element={<Acerca />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/react/*" element={<ReactTopics />} />
       </Routes>
     </>
   );
