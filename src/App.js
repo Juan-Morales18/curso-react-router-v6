@@ -1,12 +1,26 @@
 import "./App.css";
 import { Basics } from "./components/Basics";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import { MenuBasics } from "./components/MenuBasics";
+import CrudApi from "./components/CrudApi";
+import SongSearch from "./components/SongSearch";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <SongSearch></SongSearch>
+      <hr></hr>
+
+      <CrudApi></CrudApi>
+      <hr></hr>
+
+      <HashRouter>
+        <h2>Hash Router</h2>
+        <MenuBasics></MenuBasics>
+      </HashRouter>
+      <hr></hr>
+
+      <BrowserRouter>
         <h1>React Router</h1>
         <a
           href="https://reactrouter.com/docs/en/v6"
@@ -18,8 +32,8 @@ function App() {
         <MenuBasics></MenuBasics>
         <hr></hr>
         <Basics />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 

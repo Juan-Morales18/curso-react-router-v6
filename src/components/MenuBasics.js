@@ -1,5 +1,8 @@
 import styles from "./menuBasics.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, HashRouter, Routes, Route } from "react-router-dom";
+import { Home } from "../pages/Home";
+import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
 
 const { active } = styles;
 

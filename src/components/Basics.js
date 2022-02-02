@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter, Link } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Contact } from "../pages/Contact";
 import { About } from "../pages/About";
@@ -12,6 +12,7 @@ import { ReactTopics } from "../pages/ReactTopics";
 function Basics() {
   return (
     <>
+     
       <Routes>
         <Route path="*" element={<Error404 />} />
         <Route path="/" element={<Home />} />
